@@ -3,18 +3,18 @@
 
 #include <iostream>
 
-using namespace std; 
+using namespace std;
 
-int sumRange(int, int); 
+int sumRange(int, int);
 int main()
 {
-	int myLoopControlVar = 0; 
+	int myLoopControlVar = 0;
 
-	cout << "Welcome to my for and while loop program!" << endl; 
-	
+	cout << "Welcome to my for and while loop program!" << endl;
+
 	cout << "Enter a number from 0-100: ";
-	cin >> myLoopControlVar; 
-	
+	cin >> myLoopControlVar;
+
 	// The while loop has a test condition inside its ()
 	// This test condition is checked
 	while (myLoopControlVar <= 10)
@@ -22,11 +22,11 @@ int main()
 		cout << "Hello " << myLoopControlVar << endl;
 
 		// Change the loop control variable
-		myLoopControlVar++; 
+		myLoopControlVar++;
 	}
 
 	// Code up the sample while loop from today's video
-	int counter = 100; 
+	int counter = 100;
 
 	// Write out all the numbers between 100-500 that are
 	// Divisible by 3 and 5
@@ -38,7 +38,7 @@ int main()
 		}
 
 		// Change our loop control variable 
-		counter++; 
+		counter++;
 	}
 	// create a for loop 
 	// what is the loop control variable?
@@ -46,28 +46,28 @@ int main()
 
 	for (int i = 1; i <= 10; i++)
 	{
-		cout << "i is " << i << endl; 
+		cout << "i is " << i << endl;
 	}
 
-	int startRange = 0; 
-	int endRange = 0; 
+	int startRange = 0;
+	int endRange = 0;
 
-	cout << "Enter the start of the range: "; 
+	cout << "Enter the start of the range: ";
 	cin >> startRange;
 
-	cout << "Enter the end of the range: "; 
-	cin >> endRange; 
+	cout << "Enter the end of the range: ";
+	cin >> endRange;
 
-	cout << "The sum of the range is " << sumRange(startRange, endRange) << endl; 
+	cout << "The sum of the range is " << sumRange(startRange, endRange) << endl;
 
-	return 0; 
+	return 0;
 }
-int sumRange(int, int)
+int sumRange(int startRange, int endRange)
 {
 	int sum = 0; 
-	for (int i = 3; i <= 6; i++)
+	for (int i = startRange; i <= endRange; i++)
 	{
-		sum += i; 
+		sum += i;
 	}
-	return sum; 
+	return sum;
 }
